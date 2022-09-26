@@ -15,7 +15,7 @@ function renderColors() {
 
   for (let color of colorsArr) {
     colorsHtml += `
-      <div class="color"><img src="${color.image.bare}"></div>`;
+      <div class="color" style="background-color: ${color.hex.value}"></div>`;
 
     hexValuesHtml += `
       <div class="hex-value">${color.hex.value}</div>`;
@@ -28,7 +28,9 @@ function renderColors() {
 }
 
 function getScheme(hex='F15025', mode='monochrome') {
-  fetch(`https://www.thecolorapi.com/scheme?hex=${hex}&mode=${mode}&count=5`)
+  fetch(
+    `https://www.thecolorapi.com/scheme?hex=${hex}&mode=${mode}&count=5`
+  )
     .then((response) => response.json())
     .then((data) => {
       colorsArr = data.colors;
