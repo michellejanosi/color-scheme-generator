@@ -11,7 +11,8 @@ body {
 
 .container,
 .colors,
-.hex-values {
+.hex-values,
+.input-group {
   display: flex;
 }
 
@@ -22,13 +23,66 @@ body {
   margin: 0 auto;
 }
 
+.input-group {
+  position: fixed;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.625em;
+  width: 100%;
+  max-width: 550px;
+  padding: 0 1.25em;
+}
+
+#color {
+  width: 61px;
+  height: 42px;
+  padding: 0.03125em 0.15em;
+  background: #E5E5E5;
+  border: 0.5px solid #D1D5DB;
+}
+
+#color-type {
+  width: 312px;
+  height: 42px;
+  border: 1px solid #D1D5DB;
+  border-radius: 4px;
+  padding: 9px 13px;
+}
+
+option {
+  color: #111827;
+  font-weight: 400;
+}
+
+#get-button {
+  width: 123px;
+  height: 42px;
+  font-size: 0.75rem;
+  color: #374151;
+  padding: 13px 11px;
+  background-color: #fff;
+  border: 1px solid #D1D5DB;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#get-button:active {
+  transform: scale(.96);
+}
+
 .color {
   height: 550px;
   width: 110px;
 }
 
+.hex-values {
+  width: 100%;
+  max-width: 550px;
+  justify-content: space-around;
+}
+
 .hex-value {
-  margin: 2em;
   font-size: 0.75rem;
   cursor: pointer;
 }
