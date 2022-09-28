@@ -48,9 +48,11 @@ body {
   border: 1px solid #D1D5DB;
   border-radius: 4px;
   padding: 9px 13px;
-}
-
-option {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='7' viewBox='0 0 16 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 1L8 8L1 1' stroke='%239CA3AF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position-x: 97%;
+  background-position-y: 50%;
   color: #111827;
   font-weight: 400;
 }
