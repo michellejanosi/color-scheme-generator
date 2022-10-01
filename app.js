@@ -51,3 +51,10 @@ form.addEventListener('submit', e => {
 
   getScheme(data.color, data.scheme);
 })
+
+function copy(evt) {
+  const hexValue = evt.target.innerText;
+  navigator.clipboard.writeText(hexValue);
+}
+
+document.querySelector('.hex-values').addEventListener('click', copy);
