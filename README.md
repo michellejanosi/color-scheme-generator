@@ -1,4 +1,4 @@
-# Color Scheme Generator
+# Color Scheme Generator 🎨
 
 Pick a color from the color picker and generate five colors based on your choice of scheme.
 
